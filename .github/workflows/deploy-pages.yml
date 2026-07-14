@@ -38,7 +38,6 @@ jobs:
             ! -name '.github' \
             ! -name '_site' \
             -exec cp -a '{}' _site/ \;
-          cp 'christmas_tree_touch&gesture.html' '_site/index.html'
           touch '_site/.nojekyll'
 
       - name: Upload Pages artifact
